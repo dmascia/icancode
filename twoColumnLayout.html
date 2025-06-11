@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <style>
+            body {
+                height: 100vh;
+            }
+            main {
+                display: flex;
+                flex-direction: column;
+                height: 95vh;
+                background-color: white;
+                gap: 15px;
+                padding: 10px;
+            }
+            header {
+                padding: 10px;
+                height: 60px;
+                border: 2px solid blue;
+            }
+            section {
+                display: flex;
+                color: white;
+                gap: 15px;
+                flex: 1;
+            }
+            section div {
+                flex: 1;
+                justify-content: space-between;
+                padding: 5px;
+            }
+            section div:first-child {
+                display: flex;
+                background-color: red;
+            }
+            section div:last-child {
+                display: flex;
+                background-color: black;
+            }
+            footer {
+                padding: 10px;
+                height: 40px;
+                border: 2px solid pink;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <header><p>header</p></header>
+            <section>
+                <div><p>left</p><p>right</p></div>
+                <div><p>left</p><p>right</p></div>
+            </section>
+            <footer><p>footer</p></footer>
+        </main>
+    </body>
+</html>
